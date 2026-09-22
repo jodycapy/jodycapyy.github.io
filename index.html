@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portofolio Rezky Aditya</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background-color: #f4f4f4;
+      color: #333;
+    }
+
+    header {
+      background-color: #222;
+      color: white;
+      padding: 20px 10%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    header h2 {
+      font-size: 25px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 20px;
+    }
+
+    nav a:hover {
+      color: #00bcd4;
+    }
+
+    .hero {
+      min-height: 85vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      background-color: #00bcd4;
+      color: white;
+      padding: 40px;
+    }
+
+    .hero h1 {
+      font-size: 45px;
+      margin-bottom: 15px;
+    }
+
+    .hero p {
+      font-size: 20px;
+      margin-bottom: 25px;
+    }
+
+    .hero a {
+      display: inline-block;
+      background-color: #222;
+      color: white;
+      padding: 12px 25px;
+      text-decoration: none;
+      border-radius: 8px;
+    }
+
+    section {
+      padding: 60px 10%;
+    }
+
+    section h2 {
+      text-align: center;
+      margin-bottom: 30px;
+      font-size: 32px;
+    }
+
+    .tentang {
+      background-color: white;
+      text-align: center;
+    }
+
+    .tentang p {
+      max-width: 700px;
+      margin: auto;
+      line-height: 1.8;
+    }
+
+    .skill-container {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .skill {
+      background-color: white;
+      padding: 25px;
+      width: 220px;
+      text-align: center;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    .portfolio {
+      background-color: white;
+    }
+
+    .project-container {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .project {
+      background-color: #eee;
+      width: 280px;
+      padding: 20px;
+      border-radius: 10px;
+      text-align: center;
+    }
+
+    .project img {
+      width: 100%;
+      height: 170px;
+      object-fit: cover;
+      border-radius: 8px;
+      margin-bottom: 15px;
+    }
+
+    .kontak {
+      text-align: center;
+    }
+
+    .kontak p {
+      margin: 10px;
+    }
+
+    footer {
+      background-color: #222;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+
+    @media (max-width: 700px) {
+      header {
+        flex-direction: column;
+      }
+
+      nav {
+        margin-top: 15px;
+      }
+
+      nav a {
+        margin: 0 8px;
+      }
+
+      .hero h1 {
+        font-size: 34px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+  <header>
+    <h2>Rezky Aditya</h2>
+
+    <nav>
+      <a href="#beranda">Beranda</a>
+      <a href="#tentang">Tentang Saya</a>
+      <a href="#skill">Keahlian</a>
+      <a href="#portfolio">Portofolio</a>
+      <a href="#kontak">Kontak</a>
+    </nav>
+  </header>
+
+
+  <!-- BERANDA -->
+  <section class="hero" id="beranda">
+    <div>
+      <h1>Halo, Saya Rezky Aditya</h1>
+      <p>Siswa SMK | Desain Grafis | Fotografi | Editing</p>
+
+      <a href="#portfolio">Lihat Portofolio</a>
+    </div>
+  </section>
+
+
+  <!-- TENTANG -->
+  <section class="tentang" id="tentang">
+    <h2>Tentang Saya</h2>
+
+    <p>
+      Halo, nama saya Rezky Aditya. Saya seorang pelajar yang memiliki
+      ketertarikan dalam bidang desain grafis, fotografi, videografi,
+      dan editing. Saya senang membuat berbagai desain seperti poster,
+      konten media sosial, dan karya kreatif lainnya.
+    </p>
+  </section>
+
+
+  <!-- KEAHLIAN -->
+  <section id="skill">
+    <h2>Keahlian Saya</h2>
+
+    <div class="skill-container">
+
+      <div class="skill">
+        <h3>Canva</h3>
+        <p>Membuat poster dan desain media sosial.</p>
+      </div>
+
+      <div class="skill">
+        <h3>Fotografi</h3>
+        <p>Mengambil foto dengan komposisi yang menarik.</p>
+      </div>
+
+      <div class="skill">
+        <h3>Videografi</h3>
+        <p>Membuat dan mengambil video kreatif.</p>
+      </div>
+
+      <div class="skill">
+        <h3>Editing</h3>
+        <p>Mengedit foto dan video sederhana.</p>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- PORTOFOLIO -->
+  <section class="portfolio" id="portfolio">
+    <h2>Portofolio Saya</h2>
+
+    <div class="project-container">
+
+      <div class="project">
+        <img src="https://via.placeholder.com/300x170" alt="Project 1">
+        <h3>Desain Poster</h3>
+        <p>Contoh desain poster yang pernah saya buat.</p>
+      </div>
+
+      <div class="project">
+        <img src="https://via.placeholder.com/300x170" alt="Project 2">
+        <h3>Fotografi</h3>
+        <p>Beberapa hasil fotografi yang pernah saya ambil.</p>
+      </div>
+
+      <div class="project">
+        <img src="https://via.placeholder.com/300x170" alt="Project 3">
+        <h3>Editing</h3>
+        <p>Hasil editing foto maupun video.</p>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- KONTAK -->
+  <section class="kontak" id="kontak">
+    <h2>Kontak</h2>
+
+    <p>Email: emailkamu@gmail.com</p>
+    <p>Instagram: @instagramkamu</p>
+    <p>Tangerang, Indonesia</p>
+  </section>
+
+
+  <!-- FOOTER -->
+  <footer>
+    <p>&copy; 2026 Rezky Aditya | Portofolio</p>
+  </footer>
+
+</body>
+</html>
